@@ -7,6 +7,15 @@
 *.o
 *.obj
 
+/build/
+/CMakeFiles/
+/.vscode/
+.DS_store
+CMakeCache.txt
+cmake_install.cmake
+c_plus_plus
+Makefile
+
 # Precompiled Headers
 *.gch
 *.pch
