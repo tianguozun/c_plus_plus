@@ -1,6 +1,12 @@
-cmake_minimum_required(VERSION 3.22.0)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.22.0)
 
-project(c_plus_plus)    # creat project
+PROJECT(demo)    # creat project
 
-add_executable(c_plus_plus main.cpp)
+add_subdirectory(./src)
+
+AUX_SOURCE_DIRECTORY(./ DIR_CPP)  # 将当前目录所有源文件存储在DIR_CPP变量中
+
+ADD_EXECUTABLE(demo ${DIR_CPP})
+
+target_link_libraries(demo mysrc)  # 为目标demo添加共享库
 

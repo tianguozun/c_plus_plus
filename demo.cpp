@@ -19,5 +19,25 @@ int main() {
 
     cout << "---------------------------------" << endl;
 
+    int num1 = 11;
+    int num2 = 22;
+    // cout << "Input two integers: ";
+    // cin >> num1 >> num2;
+    cout << num1 << " " << num2 << endl;
+    swap1(num1, num2);
+    cout << "swap1: " << num1 << " " << num2 << endl;
+
+    num1 = 33;
+    num2 = 44;
+    cout << num1 << " " << num2 << endl;
+    swap2(&num1, &num2);
+    cout << "swap2: " << num1 << " " << num2 << endl;
+
+    num1 = 55;
+    num2 = 66;
+    cout << num1 << " " << num2 << endl;
+    swap3(num1, num2);
+    cout << "swap3: " << num1 << " " << num2 << endl;
+
     return 0;
 }
